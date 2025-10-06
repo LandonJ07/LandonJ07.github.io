@@ -1,9 +1,98 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Webpage</title>
-  </head>
-  <body>
-    Hello my name is Landon
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Landon Jackson — Portfolio</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Landon Jackson</h1>
+      <p class="subtitle">CSCE190</p>
+      <nav class="top-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <h2>About</h2>
+
+      <p>
+        My main goal in life is to become a software engineer. I am a Computer Science major and have always wanted to be a software engineer. I have always enjoyed coding and I love the aspect of creating an entire algorithm just from code.
+      </p>
+
+      <p>
+        In life, I want to accomplish graduating college first. That would be my first milestone. On the way I would like to meet a lot of great people who have a positive influence on my life and my journey throughout college. I would want to get into a job I actually enjoy and I want loving friends and family in my life.
+      </p>
+
+      <p>
+        Some words people would use to describe me are hard working and caring. I would admit to get easily distracted but when I am focused on an activity I really enjoy then I am really concentrated and won’t stop working. I am definitely considered a problem solver and won’t take the easy way out of a problem and I will actively search for a solution.
+      </p>
+
+      <p>
+        Some words people would say about me at my funeral or when I retire is that I am a very diverse thinker and I find many ways to solve one problem. People would say that I am a very hard worker and that I care about my work environment and the people around me.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <h2>Skills</h2>
+
+      <ul class="skill-list">
+        <!-- Only using descriptors that appear in the portfolio text -->
+        <li>Hard working</li>
+        <li>Caring</li>
+        <li>Easily distracted (but highly focused on things I enjoy)</li>
+        <li>Problem solver</li>
+        <li>Diverse thinker</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+
+      <p>
+        No project details were provided in the portfolio text.
+      </p>
+
+      <p class="note">(This portfolio scaffold contains only content supplied in the portfolio.)</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+
+      <p>
+        No contact information was provided in the portfolio text.
+      </p>
+
+      <p class="note">If you want your contact info added later (email, GitHub link, etc.), paste exactly what you want shown and I will update the page without adding anything extra.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Landon Jackson — CSCE190</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
