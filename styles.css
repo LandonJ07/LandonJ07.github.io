@@ -1,0 +1,93 @@
+:root{
+  --bg: #0b1220;
+  --panel: #0f1724;
+  --accent: #6ee7b7;
+  --muted: #9aa7bd;
+  --text: #e6eef8;
+  --radius: 12px;
+  --max-width: 980px;
+  --gap: 20px;
+}
+
+*{box-sizing:border-box}
+html,body{
+  height:100%;
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg), #071028 75%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  width:calc(100% - 48px);
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:28px 0;
+}
+
+.site-header{
+  background: rgba(255,255,255,0.02);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.site-title{
+  margin:0;
+  font-size: clamp(20px, 3vw, 30px);
+  color: var(--accent);
+  font-weight:700;
+}
+.subtitle{
+  margin:6px 0 14px 0;
+  color:var(--muted);
+  font-weight:500;
+}
+.top-nav a{
+  color:var(--muted);
+  text-decoration:none;
+  margin-right:14px;
+  font-weight:600;
+}
+.top-nav a:hover{ color:var(--accent) }
+
+/* common section style */
+.section{
+  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+  margin: var(--gap) 0;
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.45);
+}
+
+/* ABOUT */
+.section.about { border-left: 6px solid var(--accent); }
+.section.about h2{ color: var(--accent); }
+
+/* SKILLS */
+.section.skills { border-left: 6px solid #fbbf24; }
+.section.skills h2{ color: #fbbf24; }
+.skill-list { margin: 0; padding-left: 18px; color: var(--muted); }
+
+/* PROJECTS */
+.section.projects { border-left: 6px solid #60a5fa; }
+.section.projects h2 { color: #60a5fa; }
+.note { color: var(--muted); font-style: italic; }
+
+/* CONTACT */
+.section.contact { border-left: 6px solid #f472b6; }
+.section.contact h2 { color: #f472b6; }
+
+/* footer */
+.site-footer{
+  text-align:center;
+  padding:18px 0 36px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* small responsive tweaks */
+@media (min-width:900px) {
+  main.container{
+    display:block;
+  }
+}
