@@ -126,3 +126,36 @@ a {
   text-align: center;
   margin: 15px;
 }
+
+/* --- Affinity Diagram (Project Management 3) --- */
+.projects { display:flex; flex-wrap:wrap; } /* if you have a container of .project sections */
+.project {
+  width: 90%;
+  max-width: 980px;
+  margin: 18px auto;
+  padding: 18px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.35);
+}
+
+/* Make the section narrower on large screens like the example layout implies */
+@media(min-width:1000px){
+  .project { width: 70%; }
+}
+
+/* Representative image styling */
+.project-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 14px auto;
+  border: 3px solid rgb(126, 14, 201); /* purple border (change color if you want) */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Link and paragraph styles specific to project sections */
+.project a { text-decoration: none; color: inherit; }
+.project p { text-align: left; margin: 14px 8px; color: var(--muted); line-height:1.5; }
