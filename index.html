@@ -94,6 +94,161 @@
 
     </section>
 
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Landon Jackson — Resume</title>
+  <meta name="description" content="Landon Jackson — Resume Elements" />
+  <style>
+    :root{
+      --accent-red:#c84a3f;
+      --accent-blue:#3b6ea1;
+      --accent-green:#6b8b2f;
+      --dark:#142a2d;
+      --paper:#f7f9fb;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: #123;
+    }
+
+    body{
+      margin:0;
+      padding:0;
+      background: linear-gradient(180deg,#fff 0%, #f4f6f8 100%);
+      display:flex;
+      justify-content:center;
+      padding:36px;
+    }
+
+    .container{
+      width:900px;
+      max-width:96%;
+      background: white;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      display:grid;
+      grid-template-columns: 1fr 340px;
+      gap:32px;
+      padding:32px;
+      align-items:start;
+    }
+
+    .left{
+      padding:18px 24px;
+    }
+
+    header{
+      text-align:center;
+      margin-bottom:18px;
+    }
+
+    header h1{
+      margin:0;
+      font-size:34px;
+      color:var(--accent-red);
+      letter-spacing:0.5px;
+    }
+    header p{
+      margin:6px 0 0 0;
+      color:#8b3b3b;
+      font-weight:600;
+    }
+
+    h2.section{
+      font-size:20px;
+      color:var(--accent-blue);
+      margin:14px 0 8px 0;
+      border-bottom:3px solid #e9eef5;
+      padding-bottom:6px;
+    }
+
+    .edu,.exp,.skills{
+      margin-bottom:12px;
+      color:#2b5d88;
+      line-height:1.45;
+    }
+
+    .edu .school{
+      font-weight:700;
+      font-size:16px;
+      color:var(--dark);
+    }
+
+    .edu .meta{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      color:#2f5f91;
+    }
+
+    .exp .role{
+      color:var(--accent-green);
+      font-weight:700;
+    }
+    .exp .date{
+      color:#666;
+      font-style:italic;
+    }
+    ul.bullets{
+      margin:6px 0 12px 18px;
+    }
+
+    /* right column */
+    .right{
+      padding:18px 16px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      align-items:center;
+    }
+    .big-tag{
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px 0;
+      font-weight:800;
+      font-size:30px;
+      color:white;
+      box-shadow:0 4px 10px rgba(0,0,0,0.06);
+    }
+    .tag-header{ background:var(--accent-red) }
+    .tag-edu{ background:var(--accent-blue) }
+    .tag-exp{ background:var(--accent-green) }
+    .tag-skills{ background:var(--dark) }
+
+    .pdf-link{
+      margin-top:14px;
+      display:inline-block;
+      background:var(--accent-blue);
+      color:white;
+      padding:10px 14px;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:700;
+    }
+
+    footer{
+      grid-column: 1 / -1;
+      margin-top:8px;
+      font-size:13px;
+      color:#666;
+      text-align:center;
+    }
+
+    @media (max-width:880px){
+      .container{ grid-template-columns: 1fr; padding:20px;}
+      .right{ order: -1; flex-direction:row; flex-wrap:wrap; gap:8px; justify-content:space-between}
+      .big-tag{ flex:1; min-width:48%; font-size:18px; padding:8px 6px; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <header>
+
     <!-- CONTACT -->
     <section id="contact" class="section contact">
       <h2>Contact</h2>
