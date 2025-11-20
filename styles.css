@@ -9,54 +9,83 @@
   --gap: 20px;
 }
 
-*{box-sizing:border-box}
-html,body{
-  height:100%;
-  margin:0;
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: linear-gradient(180deg,var(--bg), #071028 75%);
-  color:var(--text);
-  -webkit-font-smoothing:antialiased;
+  background: linear-gradient(180deg, var(--bg), #071028 75%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
 }
 
-.container{
-  width:calc(100% - 48px);
-  max-width:var(--max-width);
-  margin:0 auto;
-  padding:28px 0;
+.container {
+  width: calc(100% - 48px);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 28px 0;
 }
 
-.site-header{
+/* HEADER */
+.site-header {
   background: rgba(255,255,255,0.02);
-  border-bottom:1px solid rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
 }
-.site-title{
-  margin:0;
+.site-title {
+  margin: 0;
   font-size: clamp(20px, 3vw, 30px);
   color: var(--accent);
-  font-weight:700;
+  font-weight: 700;
 }
-.subtitle{
-  margin:6px 0 14px 0;
-  color:var(--muted);
-  font-weight:500;
+.subtitle {
+  margin: 6px 0 14px 0;
+  color: var(--muted);
+  font-weight: 500;
 }
-.top-nav a{
-  color:var(--muted);
-  text-decoration:none;
-  margin-right:14px;
-  font-weight:600;
-}
-.top-nav a:hover{ color:var(--accent) }
 
-/* common section style */
-.section{
+/* NAV */
+.top-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-right: 14px;
+  font-weight: 600;
+}
+.top-nav a:hover {
+  color: var(--accent);
+}
+
+/* COMMON SECTION STYLE */
+.section {
   background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
   margin: var(--gap) 0;
   padding: 20px;
   border-radius: var(--radius);
   border: 1px solid rgba(255,255,255,0.03);
   box-shadow: 0 6px 18px rgba(2,6,23,0.45);
+}
+
+/* ABOUT */
+.section.about {
+  border-left: 6px solid var(--accent);
+}
+.section.about h2 {
+  color: var(--accent);
+}
+
+/* SKILLS */
+.section.skills {
+  border-left: 6px solid #fbbf24;
+}
+.section.skills h2 {
+  color: #fbbf24;
+}
+.skill-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
 }
 
 /* PROBLEM STATEMENT */
@@ -77,58 +106,27 @@ html,body{
   margin-right: auto;
 }
 
-/* ABOUT */
-.section.about { border-left: 6px solid var(--accent); }
-.section.about h2{ color: var(--accent); }
-
-/* SKILLS */
-.section.skills { border-left: 6px solid #fbbf24; }
-.section.skills h2{ color: #fbbf24; }
-.skill-list { margin: 0; padding-left: 18px; color: var(--muted); }
-
-/* PROJECTS */
-.section.projects { border-left: 6px solid #60a5fa; }
-.section.projects h2 { color: #60a5fa; }
-.note { color: var(--muted); font-style: italic; }
+/* PROJECTS SECTION (outer card) */
+.section.projects {
+  border-left: 6px solid #60a5fa;
+}
+.section.projects h2 {
+  color: #60a5fa;
+}
+.note {
+  color: var(--muted);
+  font-style: italic;
+}
 
 /* CONTACT */
-.section.contact { border-left: 6px solid #f472b6; }
-.section.contact h2 { color: #f472b6; }
-
-/* footer */
-.site-footer{
-  text-align:center;
-  padding:18px 0 36px;
-  color:var(--muted);
-  font-size:14px;
+.section.contact {
+  border-left: 6px solid #f472b6;
+}
+.section.contact h2 {
+  color: #f472b6;
 }
 
-/* small responsive tweaks */
-@media (min-width:900px) {
-  main.container{
-    display:block;
-  }
-}
-
-.project img {
-  width: 300px;
-  height: 300px;
-  margin: 10px;
-  border: 2px solid rgb(126, 14, 201);
-  display: block;
-  margin: auto;
-}
-a {
-  text-decoration: none;
-  color: purple;
-}
-.project p {
-  text-align: center;
-  margin: 15px;
-}
-
-/* --- Affinity Diagram (Project Management 3) --- */
-.projects { display:flex; flex-wrap:wrap; } /* if you have a container of .project sections */
+/* PROJECT CARDS (Affinity, Sketches, Java Fleet Manager) */
 .project {
   width: 90%;
   max-width: 980px;
@@ -139,9 +137,10 @@ a {
   box-shadow: 0 6px 18px rgba(2,6,23,0.35);
 }
 
-/* Make the section narrower on large screens like the example layout implies */
-@media(min-width:1000px){
-  .project { width: 70%; }
+@media (min-width: 1000px) {
+  .project {
+    width: 70%;
+  }
 }
 
 /* Representative image styling */
@@ -151,11 +150,48 @@ a {
   height: auto;
   display: block;
   margin: 14px auto;
-  border: 3px solid rgb(126, 14, 201); /* purple border (change color if you want) */
+  border: 3px solid rgb(126, 14, 201); /* purple border */
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Link and paragraph styles specific to project sections */
-.project a { text-decoration: none; color: inherit; }
-.project p { text-align: left; margin: 14px 8px; color: var(--muted); line-height:1.5; }
+/* Images inside .project (fallback) */
+.project img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: purple;
+}
+.project a {
+  text-decoration: none;
+  color: inherit; /* project title uses the same color as text */
+}
+
+/* Project text */
+.project p {
+  text-align: left;
+  margin: 14px 8px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 18px 0 36px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* small responsive tweaks */
+@media (min-width: 900px) {
+  main.container {
+    display: block;
+  }
+}
