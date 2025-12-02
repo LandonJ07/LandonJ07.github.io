@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Landon Jackson — Portfolio</title>
+  <title>Landon Jackson — CSCE190 Portfolio</title>
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +13,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- SITE HEADER -->
   <header class="site-header">
-    <div class="container">
-      <h1 class="site-title">Landon Jackson</h1>
-      <p class="subtitle">CSCE190</p>
-      <nav class="top-nav">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="avatar-circle" aria-hidden="true">LJ</div>
+        <div>
+          <h1 class="site-title">Landon Jackson</h1>
+          <p class="subtitle">CSCE 190 • Portfolio &amp; Project Management</p>
+        </div>
+      </div>
+
+      <nav class="top-nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#problem">Problem</a>
+        <a href="#pm">Project Management</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a href="resume.html">Resume</a>
@@ -28,113 +35,162 @@
     </div>
   </header>
 
-  <main class="container">
+  <!-- MAIN CONTENT -->
+  <main class="container main-content">
     <!-- ABOUT -->
-    <section id="about" class="section about">
-      <h2>About</h2>
+    <section id="about" class="section section-about">
+      <div class="section-heading">
+        <h2>About</h2>
+        <p class="section-tagline">Computer Science major with a passion for software engineering.</p>
+      </div>
 
-      <p>
-        My main goal in life is to become a software engineer. I am a Computer Science major and have always wanted to be a software engineer. I have always enjoyed coding and I love the aspect of creating an entire algorithm just from code.
-      </p>
+      <div class="about-grid">
+        <div class="about-main">
+          <p class="mission">
+            <strong>Mission Statement</strong>
+            My main goal in life is to become a software engineer. I am a Computer Science major and have always wanted to be a software engineer. I have always enjoyed coding and I love the aspect of creating an entire algorithm just from code.
+          </p>
 
-      <p>
-        In life, I want to accomplish graduating college first. That would be my first milestone. On the way I would like to meet a lot of great people who have a positive influence on my life and my journey throughout college. I would want to get into a job I actually enjoy and I want loving friends and family in my life.
-      </p>
+          <p>
+            In life, I want to accomplish graduating college first. That would be my first milestone. On the way I would like to meet a lot of great people who have a positive influence on my life and my journey throughout college. I would want to get into a job I actually enjoy and I want loving friends and family in my life.
+          </p>
+          <p>
+            Some words people would use to describe me are hard working and caring. I would admit to get easily distracted but when I am focused on an activity I really enjoy then I am really concentrated and won’t stop working. I am definitely considered a problem solver and won’t take the easy way out of a problem and I will actively search for a solution.
+          </p>
+          <p>
+            Some words people would say about me at my funeral or when I retire is that I am a very diverse thinker and I find many ways to solve one problem. People would say that I am a very hard worker and that I care about my work environment and the people around me.
+          </p>
+        </div>
 
-      <p>
-        Some words people would use to describe me are hard working and caring. I would admit to get easily distracted but when I am focused on an activity I really enjoy then I am really concentrated and won’t stop working. I am definitely considered a problem solver and won’t take the easy way out of a problem and I will actively search for a solution.
-      </p>
-
-      <p>
-        Some words people would say about me at my funeral or when I retire is that I am a very diverse thinker and I find many ways to solve one problem. People would say that I am a very hard worker and that I care about my work environment and the people around me.
-      </p>
+        <aside class="about-aside">
+          <h3>Quick Info</h3>
+          <ul>
+            <li>Major: Computer Science</li>
+            <li>Goal: Software Engineer</li>
+            <li>Strengths: Problem solving, hard working, caring</li>
+          </ul>
+          <a class="button-ghost" href="resume.html">View Resume</a>
+        </aside>
+      </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section skills">
-      <h2>Skills</h2>
+    <section id="skills" class="section section-skills">
+      <div class="section-heading">
+        <h2>Skills</h2>
+        <p class="section-tagline">Traits and strengths that shape how I work.</p>
+      </div>
 
       <ul class="skill-list">
         <li>Hard working</li>
         <li>Caring</li>
-        <li>Easily distracted (but highly focused on things I enjoy)</li>
+        <li>Easily distracted (but highly focused on what I enjoy)</li>
         <li>Problem solver</li>
         <li>Diverse thinker</li>
       </ul>
     </section>
-    
-    <!-- PROBLEM STATEMENT -->
-    <section id="problem" class="section problem">
-      <h2>Problem Statement</h2>
-      <p>
-        This is my CSCE190 problem statement assignment. The screenshot below shows my completed Google Doc:
-      </p>
 
-      <!-- This matches the file that appears in your repo: "problem ss.jpg" -->
-      <img src="problem ss.jpg" alt="Problem Statement Screenshot" class="screenshot">
-    </section>
-
-    <!-- AFFINITY DIAGRAM ASSIGNMENT -->
-    <section class="section project">
-      <a href="files/Affinity_DOC.pdf">
-        <h2>Affinity Diagram</h2>
-      </a>
-      <a href="files/Affinity_DOC.pdf">
-        <img src="images/Affinity_IMG.png" alt="Affinity Diagram Image" class="project-img">
-      </a>
-      <p>
-        This affinity diagram analyzes the Problem Statement: 
-        <em>College students often struggle to manage time effectively between classes, studying, and personal life, leading to stress and missed deadlines.</em>
-      </p>
-      <p>
-        The diagram clusters ideas into four groups — Responsibilities, Symptoms, Causes, and Consequences — to help reveal patterns and prioritize design directions for a time-management solution.
-      </p>
-    </section>
-
-    <!-- SKETCHES ASSIGNMENT -->
-    <section class="section project">
-      <a href="files/Sketches_DOC.pdf">
-        <h2>Sketches</h2>
-      </a>
-      <a href="files/Sketches_DOC.pdf">
-        <img src="images/Sketches_IMG.png" alt="Sketches Representative Image" class="project-img">
-      </a>
-      <p>
-        Three wireframe sketches show how the time-management app would look in different scenarios: a daily dashboard for tracking classes and tasks, a focus session timer for productive studying, and a study-group finder to coordinate with peers.
-      </p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section projects">
-      <h2>Projects</h2>
-
-      <!-- Java Fleet Manager project (GitHub repo link) -->
-      <section class="project">
-        <a href="https://github.com/LandonJ07/fleet-manager-java" target="_blank">
-          <h3>Fleet Manager (Java)</h3>
-        </a>
-        <p>
-          A Java program that manages a fleet of vehicles using object-oriented programming.
-          It uses custom classes, constructors, validation logic, and array-based add/remove
-          operations for handling <code>Vehicle</code> objects.
+    <!-- PROJECT MANAGEMENT BLOCK -->
+    <section id="pm" class="section section-pm">
+      <div class="section-heading">
+        <h2>Project Management</h2>
+        <p class="section-tagline">
+          CSCE 190 assignments: problem statement, affinity diagram, and sketches for a time-management app.
         </p>
-      </section>
+      </div>
+
+      <div class="pm-grid">
+        <!-- PROBLEM STATEMENT -->
+        <article class="pm-card">
+          <h3>Problem Statement</h3>
+          <p>
+            College students often struggle to manage time effectively between classes, studying, and personal life,
+            leading to stress and missed deadlines.
+          </p>
+          <p>
+            This card shows my CSCE 190 Problem Statement assignment. The screenshot below is from my completed Google Doc.
+          </p>
+          <img src="problem ss.jpg" alt="Screenshot of Problem Statement Google Doc" class="screenshot">
+        </article>
+
+        <!-- AFFINITY DIAGRAM -->
+        <article class="pm-card">
+          <header class="pm-card-header">
+            <h3>Affinity Diagram</h3>
+            <a class="pm-link" href="files/Affinity_DOC.pdf">Open PDF</a>
+          </header>
+          <p>
+            This affinity diagram breaks the problem into groups: <em>Responsibilities</em>, <em>Symptoms</em>,
+            <em>Causes</em>, and <em>Consequences</em>. Clustering ideas this way helps reveal patterns and guides
+            design decisions for a time-management solution.
+          </p>
+          <a href="files/Affinity_DOC.pdf">
+            <img src="images/Affinity_IMG.png" alt="Affinity diagram image" class="project-img">
+          </a>
+        </article>
+
+        <!-- SKETCHES -->
+        <article class="pm-card">
+          <header class="pm-card-header">
+            <h3>Sketches</h3>
+            <a class="pm-link" href="files/Sketches_DOC.pdf">Open PDF</a>
+          </header>
+          <p>
+            These sketches visualize key screens for the app: a daily dashboard for tracking classes and tasks,
+            a focus timer for productive studying, and a study-group finder to coordinate with classmates.
+          </p>
+          <a href="files/Sketches_DOC.pdf">
+            <img src="images/Sketches_IMG.png" alt="Sketches of app wireframes" class="project-img">
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS (PORTFOLIO) -->
+    <section id="projects" class="section section-projects">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <p class="section-tagline">Programming work outside the project management assignments.</p>
+      </div>
+
+      <article class="project-card">
+        <header class="project-header">
+          <h3>Fleet Manager (Java)</h3>
+          <a class="project-link" href="https://github.com/LandonJ07/fleet-manager-java" target="_blank" rel="noopener noreferrer">
+            View on GitHub
+          </a>
+        </header>
+        <p>
+          A Java program that manages a fleet of vehicles using object-oriented programming. The project uses custom
+          <code>Vehicle</code> classes, constructors, input validation, and array-based add/remove operations to manage
+          the collection.
+        </p>
+      </article>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <h2>Contact</h2>
-      <p>Email: lcj9@email.sc.edu</p>
+    <section id="contact" class="section section-contact">
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <p class="section-tagline">Feel free to reach out with opportunities or questions.</p>
+      </div>
+
+      <p>
+        Email:
+        <a href="mailto:lcj9@email.sc.edu">lcj9@email.sc.edu</a>
+      </p>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
-      <small>&copy; <span id="year"></span> Landon Jackson — CSCE190</small>
+      <small>&copy; <span id="year"></span> Landon Jackson • CSCE 190</small>
     </div>
   </footer>
 
   <script>
+    // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
